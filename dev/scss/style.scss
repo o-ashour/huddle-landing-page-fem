@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+@import 'config';
+@import 'resets';
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
 body {
-  background-color: yellow;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $primary-1;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  color: #fff;
+  margin: 0 2.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  margin: 2.5em 0;
+}
+
+/* logo image */
+.logo {
+  width: 10em;
+}
+
+main {
+  margin-top: 2.5em;
+}
+
+.sign-up {
+  margin-top: 3em;
+  text-align: center;
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.7em;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  button {
+    width: 70%;
+    color: $primary-1;
+    border: none;
+    border-radius: 26px;
+    padding: 1.1em 0;
+    font-size: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0 5px 3px #523c8b;
+  }
 }
