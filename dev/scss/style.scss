@@ -142,6 +142,16 @@ footer {
           width: 37%;
           font-size: 1rem;
         }
+
+        button:hover {
+          background-color: $primary-2;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        button:active {
+          transform: scale(0.94);
+        }
       }
     }
 
@@ -149,6 +159,13 @@ footer {
       ul {
         width: 12%;
         float: right;
+      }
+
+      a:hover {
+        color: darken($primary-2, 25%);
+        li {
+          border-color: darken($primary-2, 25%);
+        }
       }
     }
   // }
