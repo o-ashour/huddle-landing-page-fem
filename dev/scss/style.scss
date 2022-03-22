@@ -92,3 +92,57 @@ footer {
     color: #fff;
   }
 }
+
+// @mixin desktop {
+//   @media (min-width: $large-screen) {
+//     @content;
+//   }
+// }
+
+@media (min-width: $large-screen) {
+  // @include desktop {
+    img {
+      // max-width: none;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../images/bg-desktop.svg");
+      background-size: cover;
+      margin: 0 5em;
+    }
+
+    .header {
+      margin: 4em 0;
+    }
+
+    .logo {
+      width: 14em;
+    }
+
+    main {
+      display: flex;
+      min-height: 68vh;
+
+      .illustration {
+        // flex: 1;
+      }
+
+      .sign-up {
+        flex: 1;
+        text-align: unset;
+        margin-left: 3.5em;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        button {
+          width: 37%;
+          font-size: 1rem;
+        }
+      }
+    }
+  // }
+}
